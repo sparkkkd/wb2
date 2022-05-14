@@ -1,0 +1,95 @@
+.how
+  margin-top: 80px
+
+.how__slide
+  padding: 30px
+  transform: scale(.6)
+  opacity: .4
+  transition: transform .3s, opacity .3s
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    border: 2px solid #bd1c5c
+    border-radius: 20px
+    opacity: 0
+    transition: opacity .4s
+
+.slick-center
+  position: relative
+  transform: scale(1)
+  opacity: 1
+  &::before
+    opacity: 1
+
+.how__slide__num
+  margin-bottom: 10px
+  font-size: 26px
+  background: linear-gradient(92.53deg, #c726c7 -0.57%, #d30012 56.19%, #bd1c5c 102.63%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.how__slide__text
+  font-family: 'Kharkiv'
+  margin-bottom: 30px
+  font-size: 26px
+  line-height: 29px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 975px )
+  .how__slide
+    padding: 30px
+
+  .how__slide__num
+    font-size: 18px
+  
+  .how__slide__text
+    margin-bottom: 20px
+    font-size: 18px
+    line-height: 23px
+
+  .how__slide__img
+    width: 40px
+
+@media screen and ( max-width: 715px )
+  .how__slide
+    padding: 20px
+
+  .how__slide__num
+    font-size: 14px
+
+  .how__slide__text
+    margin-bottom: 20px
+    font-size: 14px
+    line-height: 17px
+
+  .how__slide__img
+    width: 30px
+
+@media screen and ( max-width: 475px )
+  .how__slider__button
+    top: -75px
+
+  .slider-prev
+    right: 70px
+
+@media screen and ( max-width: 400px )
+  .how__slider__button
+    width: 35px
+    height: 35px
+    top: -68px
+
+@media screen and ( max-width: 375px )
+  .how__title
+    width: 50%
+    margin-left: 0px
+    margin-right: 0px
+    line-height: 24px
+
+  .how__slider__button
+    width: 40px
+    height: 40px
+    top: -79px

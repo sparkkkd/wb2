@@ -1,0 +1,308 @@
+.cases
+  margin-top: 140px
+  position: relative
+
+.cases__wrapper
+  display: flex
+  position: relative
+  min-height: 900px
+
+.case__block
+  position: absolute
+  box-shadow: 8.9866px 8.9866px 18.7221px rgba(0, 0, 0, 0.25)
+
+.case__block-1
+  top: 44%    
+  left: 0%
+  z-index: 2
+  transform: scale(1) rotateZ(-11deg)
+  transition: transform .3s
+  &:hover
+      transform: scale(1.05) rotateZ(-11deg)
+
+.case__block-2
+  top: 18%
+  left: 18%
+  z-index: 1
+  transform: scale(1) rotateZ(15deg)
+  transition: transform .3s
+  &:hover
+      transform: scale(1.05) rotateZ(15deg)
+
+.case__block-3
+  top: 42%
+  left: 37%
+  z-index: 2
+  transform: scale(1) rotateZ(-19deg)
+  transition: transform .3s
+  &:hover
+      transform: scale(1.05) rotateZ(-19deg)
+
+.case__block-4
+  top: 20%
+  left: 61%
+  z-index: 1
+  transform: scale(1) rotateZ(8deg)
+  transition: transform .3s
+  &:hover
+      transform: scale(1.05) rotateZ(8deg)
+
+.cases__tape
+  position: absolute
+  top: 100px
+  left: 65px
+  transform: rotateZ(-10deg)
+  z-index: 4
+  img
+    width: 500px
+
+.cases-tape__text
+  position: absolute
+  width: 80%
+  top: 47%
+  left: 50%
+  transform: translate(-50%, -50%) rotateZ(2deg)
+  font-size: 13px
+  line-height: 20px
+
+.glowball-4
+  top: 50%
+  right: 0
+  transform: translateY(-50%)
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1600px )
+  .glowball-4
+    width: 800px
+
+@media screen and ( max-width: 1285px )
+  .cases__wrapper
+    min-height: 700px
+
+  .case__block-1
+    top: 33%
+    left: 8%
+    img
+      width: 220px
+
+  .case__block-2
+    top: 20%
+    left: 25%
+    img
+      width: 250px
+  
+  .case__block-3
+    top: 38%
+    left: 42%
+    img
+      width: 250px
+
+  .case__block-4
+    img
+      width: 300px
+
+  .glowball-4
+
+@media screen and ( max-width: 1100px )
+  .cases__tape 
+    img
+      width: 425px
+
+  .cases-tape__text
+    font-size: 12px
+    line-height: 15px
+
+@media screen and ( max-width: 900px )
+  .cases__tape 
+    top: 71px
+    left: -20px
+    transform: rotateZ(-8deg)
+  
+  .cases__wrapper
+    min-height: 550px
+
+  .case__block-1
+    top: 33%
+    left: 2%
+    img
+      width: 170px
+
+  .case__block-2
+    top: 20%
+    left: 19%
+    img
+      width: 200px
+  
+  .case__block-3
+    top: 38%
+    left: 38%
+    img
+      width: 200px
+
+  .case__block-4
+    left: 58%
+    img
+      width: 240px
+
+  .glowball-4
+    width: 560px
+
+@media screen and ( max-width: 750px )
+  .cases__tape 
+    top: 71px
+    left: 52px
+    transform: rotateZ(-8deg)
+    img
+      width: 365px
+
+  .cases-tape__text 
+    font-size: 12px
+    line-height: 11px
+  
+  .cases__wrapper
+    min-height: 550px
+
+  .case__block-1
+    left: 5%
+
+@media screen and ( max-width: 630px )
+  .cases__wrapper
+    min-height: 450px
+
+  .cases__tape
+    display: none 
+
+  .case__block-1
+    top: 33%
+    left: 8%
+    img
+      width: 140px
+
+  .case__block-2
+    top: 20%
+    left: 19%
+    img
+      width: 160px
+  
+  .case__block-3
+    top: 38%
+    left: 38%
+    transform: scale(1) rotateZ(-3deg)
+    img
+      width: 160px
+    &:hover
+     transform: scale(1.05) rotateZ(-3deg)
+      
+  .case__block-4
+    left: 58%
+    img
+      width: 190px
+
+  .glowball-4
+    width: 450px
+
+@media screen and ( max-width: 530px )
+  .cases__wrapper
+    min-height: 400px
+
+  .case__block-1
+    top: 36%
+    left: 8%
+    img
+      width: 120px
+
+  .case__block-2
+    top: 18%
+    left: 23%
+    img
+      width: 140px
+  
+  .case__block-3
+    top: 49%
+    left: 43%
+    transform: rotateZ(-3deg)
+    &:hover
+      transform: rotateZ(-3deg)
+    img
+      width: 120px
+
+  .case__block-4
+    top: 31%
+    left: 58%
+    transform: rotateZ(-6deg)
+    &:hover
+      transform: rotateZ(-6deg)
+    img
+      width: 150px
+
+  .glowball-4
+    width: 380px
+
+@media screen and ( max-width: 475px )
+  .cases__wrapper
+    min-height: 530px
+
+  .case__block-1
+    top: 12%
+    left: 16%
+    z-index: 4
+    img
+      width: 130px
+
+  .case__block-2
+    top: 50%
+    left: 14%
+    transform: rotateZ(-9deg)
+    z-index: 3
+    &:hover
+      transform: rotateZ(-9deg)
+    img
+      width: 130px
+  
+  .case__block-3
+    top: 49%
+    left: 41%
+    z-index: 2
+    transform: rotateZ(9deg)
+    &:hover
+      transform: rotateZ(9deg)
+    img
+      width: 165px
+
+  .case__block-4
+    top: 10%
+    left: 43%
+    transform: rotateZ(9deg)
+    &:hover
+      transform: rotateZ(9deg)
+    z-index: 1
+    img
+      width: 195px
+
+  .glowball-4
+    width: 380px
+
+@media screen and ( max-width: 400px )
+  .case__block-1
+    top: 15%
+    img
+      width: 110px
+
+  .case__block-2
+    top: 50%
+    img
+      width: 110px
+
+  .case__block-3
+    top: 52%
+    left: 44%
+    img
+      width: 140px
+
+  .case__block-4
+    top: 17%
+    img
+      width: 160px
+
+  .glowball-4 
+    width: 320px

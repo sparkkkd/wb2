@@ -1,0 +1,204 @@
+.footer
+  margin-top: 100px
+
+.footer__wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: start
+  flex-wrap: wrap
+
+/* ****************** Top ****************** */
+.footer__logo
+  margin-bottom: 20px
+  transition: transform .3s
+  img
+    margin-right: 15px
+    width: 130px
+  &:hover
+    transform: scale(.99)  
+
+/* ****************** Center ****************** */ 
+.footer__center
+  margin-bottom: 50px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: start
+
+.footer__info
+  margin-bottom: 50px
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+  font-family: 'Neue'
+  font-size: 18px
+  span
+    margin-bottom: 13px
+    &:last-child
+      margin-bottom: 0px
+
+.footer__contacts
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+  font-family: 'Neue'
+  font-size: 18px
+  a
+    margin-bottom: 13px
+    transition: color .3s
+    &:last-child
+      margin-bottom: 0px
+    &:hover
+      color: #f41c74
+
+/* ****************** Bottom ****************** */ 
+.footer__bottom
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+.footer__license
+  font-family: 'Neue'
+  font-size: 14px
+
+.dash__logo
+  margin-right: 175px
+
+/* ****************** Tape ****************** */
+.footer__tape
+  position: absolute
+  top: -55%
+  left: 56%
+
+.footer-tape__text
+  position: absolute
+  width: 80%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%) rotateZ(2deg)
+  font-size: 13px
+  line-height: 19px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1355px )
+  .footer__tape
+    top: -50%
+    left: 53%  
+
+@media screen and ( max-width: 1277px )
+  .footer__tape
+    top: -50%
+    left: 52%  
+
+@media screen and ( max-width: 1240px )
+  .footer__tape
+    top: -50%
+    left: auto
+    right: 1%
+
+  .footer-tape__img
+    width: 450px
+
+  .footer-tape__text
+    font-size: 11px
+    line-height: 15px
+
+@media screen and ( max-width: 1085px )
+  .footer__tape
+    top: -30%
+
+  .footer__info
+    font-size: 14px
+
+  .footer__contacts
+    font-size: 14px
+
+  .dash__logo 
+    margin-right: 112px
+
+@media screen and ( max-width: 800px )
+  .footer__center
+    margin-bottom: 0px
+
+@media screen and ( max-width: 965px )
+  .footer
+    margin-top: 150px
+
+  .footer__center
+    width: 80%
+
+  .footer__bottom
+    width: 80%
+
+  .dash__logo 
+    margin-right: 110px
+
+@media screen and ( max-width: 965px )
+  .footer__tape
+    top: -45%
+
+@media screen and ( max-width: 777px )
+  .footer__tape 
+    top: -76%
+
+@media screen and ( max-width: 750px )
+  .footer__tape 
+    top: -64%
+
+@media screen and ( max-width: 660px )
+  .footer-tape__img 
+    width: 400px
+
+  .footer-tape__text
+    top: 47%
+    font-size: 12px
+    line-height: 13px
+
+  .footer__center
+    width: 100%
+
+  .footer__bottom
+    width: 100%
+
+@media screen and ( max-width: 500px )
+  .footer__info
+    font-size: 11px
+
+  .footer__contacts
+    font-size: 11px
+  
+  .footer__license
+    font-size: 11px
+
+  .footer__logo
+    img
+      width: 100px
+
+  .dash__logo
+    margin-right: 90px
+    width: 80px
+
+  .footer__tape
+    right: auto
+    left: 50%
+    transform: translateX(-50%)
+
+@media screen and ( max-width: 412px )
+  .footer-tape__img 
+    width: 350px
+
+  .footer-tape__text
+    top: 47%
+    font-size: 10px
+    line-height: 13px
+
+@media screen and ( max-width: 358px )
+  .footer
+    margin-top: 70px
+
+  .footer__tape
+    display: none

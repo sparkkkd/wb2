@@ -1,0 +1,42 @@
+.marquee
+  overflow: hidden
+  
+.marquee__line
+  padding-bottom: 20px 
+  padding-top: 24px
+  display: flex
+  width: 200%
+  border-top: 1px solid #fff
+  border-bottom: 1px solid #fff
+
+.marquee__text
+  width: 100%
+  display: flex
+  justify-content: space-between
+  font-family: 'Kharkiv'
+  font-size: 24px
+  line-height: 30px
+  text-align: center
+  transform: translateX(0%)
+  transition: transform .1s
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1030px )
+  .marquee__text
+    font-size: 18px
+    line-height: 21px
+  
+@media screen and ( max-width: 766px )
+  .marquee__text
+    justify-content: start
+    div
+      margin-right: 50px
+
+@media screen and ( max-width: 450px )
+  .marquee__line
+    padding-top: 19px
+    padding-bottom: 15px
+
+  .marquee__text 
+    font-size: 15px
+    line-height: 18px

@@ -1,0 +1,167 @@
+*, *::before, *::after
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+html
+	scroll-behavior: smooth
+	-webkit-text-size-adjust: none
+	
+body
+	background-color: #050505
+	font-family: 'Neue'
+	color: #fff
+
+a
+	color: inherit
+	text-decoration: none
+
+input
+	outline: none
+
+button
+	border: none
+	outline: none
+	background: transparent
+
+body::-webkit-scrollbar
+ background-color: transparent
+ width: 5px
+
+body::-webkit-scrollbar-track
+	background: transparent
+	width: 5px
+
+body::-webkit-scrollbar-thumb
+	background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+
+.popup::-webkit-scrollbar
+ background-color: transparent
+ width: 5px
+
+.popup::-webkit-scrollbar-track
+	background: transparent
+	width: 5px
+
+.popup::-webkit-scrollbar-thumb
+	background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+
+.reviews, .services, .cases, .prices, .claim
+	scroll-margin: 100px 0px 0px 0px !important
+
+.noise-bg
+	position: fixed
+	width: 200%
+	height: 200%
+	top: -50%
+	left: -50%
+	background: url('../images/general/noise.gif')
+	background-size: 3%
+	pointer-events: none
+	z-index: -1
+	opacity: 16%
+
+.glowball
+	position: absolute
+	overflow: hidden
+	
+.container
+	max-width: 1220px
+	margin: 0 auto
+	padding: 10px  
+
+.button
+	position: relative
+	margin: 0
+	font-family: 'Neue'
+	color: #fff
+	text-align: center
+	border-radius: 20px
+	border: none
+	transition: all .3s
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+		border-radius: 20px
+		filter: blur(5px)
+		-webkit-backdrop-filter: blur(5px)
+		backdrop-filter: blur(5px)
+		border: none
+		z-index: -1
+		transition: all .3s
+	&:hover
+		transform: scale(1.03)
+
+.section__title
+	margin-bottom: 75px
+	margin-right: auto
+	margin-left: auto
+	font-family: 'Kharkiv'
+	font-size: 48px
+	line-height: 51px
+	text-align: center
+
+/* ****************** Media ****************** */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) 
+	.button
+		&::before
+			-webkit-backdrop-filter: blur(5px)
+		&::before
+			-webkit-backdrop-filter: blur(10px)
+
+@media screen and ( max-width: 1250px )
+	.container
+		padding: 10px 40px
+
+@media screen and ( max-width: 800px )
+	.section__title
+		margin-bottom: 30px
+		font-size: 36px
+
+	.section__title--left
+		text-align: left
+
+
+@media screen and ( max-width: 750px )
+	.container
+		padding: 0px 10px
+
+@media screen and ( max-width: 670px )
+	.container
+		margin: 0
+	
+@media screen and ( max-width: 600px )
+	.section__title
+		line-height: 44px
+
+@media screen and ( max-width: 530px )
+  .section__title
+    font-size: 32px
+
+@media screen and ( max-width: 475px )
+	.section__title
+		margin-bottom: 30px
+		font-size: 25px
+		line-height: 32px
+
+@media screen and ( max-width: 450px )
+	.slider-prev
+		right: 66px !important
+
+@media screen and ( max-width: 460px )
+  .section__title
+    font-size: 26px
+
+@media screen and ( max-width: 425px )
+	.section__title
+		font-size: 23px
+
+@media screen and ( max-width: 375px )
+  .section__title
+    font-size: 21px

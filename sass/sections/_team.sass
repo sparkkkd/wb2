@@ -1,0 +1,193 @@
+.team
+  margin-top: 150px
+  position: relative
+
+.team__tape
+  position: absolute
+  right: -331px
+  top: -90px
+  transform: rotateZ(2deg)
+
+.tape__img
+  width: 600px
+
+.tape__text
+  position: absolute
+  width: 500px
+  top: 46%
+  left: 53%
+  transform: translate(-50%, -50%) rotateZ(2deg)
+  font-family: 'Neue'
+  font-size: 15px
+  line-height: 20px
+
+.team__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+
+.team__title
+  margin-bottom: 20px
+  position: relative
+  font-family: 'Kharkiv'
+  font-size: 48px
+  line-height: 53px
+
+.team__text
+  margin-bottom: 70px
+  font-family: 'Neue'
+  font-size: 24px
+  line-height: 32px
+
+.team__blocks
+  display: flex
+  justify-content: space-between
+  align-items: start
+
+.team__block
+  display: flex
+  flex-direction: column
+  flex-basis: 23%
+  justify-content: start
+  align-items: start
+
+.team__block-title
+  margin-bottom: 20px
+  font-size: 64px
+  font-family: 'Kharkiv'
+  background: linear-gradient(92.53deg, #c726c7 -0.57%, #d30012 56.19%, #bd1c5c 102.63%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.team__block-text
+  font-size: 24px
+  line-height: 34px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1000px )
+  .team__title
+    font-size: 40px
+    line-height: 46px
+
+  .team__tape 
+    right: -314px
+    top: -78px
+
+  .tape__img
+    width: 530px
+
+  .tape__text
+    width: 415px
+    font-size: 12px
+    line-height: 16px
+
+  .team__text 
+    font-size: 19px
+    line-height: 27px
+
+  .team__block-title
+    font-size: 50px
+
+  .team__block-text
+    font-size: 17px
+    line-height: 25px
+  
+@media screen and ( max-width: 870px )
+  .tape__img
+    width: 430px
+
+  .tape__text 
+    width: 330px
+    font-size: 11px
+    line-height: 13px
+
+  .team__tape 
+    right: -220px
+    top: -60px
+
+@media screen and ( max-width: 775px )
+  .team
+    margin-top: 200px
+
+  .team__tape 
+    right: -133px
+    top: -121px
+
+  .team__title 
+    font-size: 33px
+    line-height: 35px
+
+  .team__text 
+    font-size: 16px
+    line-height: 22px
+
+  .team__block-title 
+    font-size: 40px
+
+  .team__block-text 
+    font-size: 15px
+    line-height: 21px
+
+@media screen and ( max-width: 640px )
+  .team__tape
+    right: auto
+    top: -80px
+    left: 0
+    transform: rotateZ(-6deg)
+
+  .team__blocks
+    flex-wrap: wrap
+
+  .team__block
+    margin-bottom: 40px
+    flex-basis: 40%
+
+@media screen and ( max-width: 450px )
+  .tape__img 
+    width: 370px
+
+  .team__tape 
+    top: -70px
+
+  .tape__text 
+    width: 288px
+    font-size: 11px
+    line-height: 11px
+
+  .team__title 
+    font-size: 27px
+    line-height: 28px
+
+  .team__text 
+    font-size: 14px
+    line-height: 18px
+
+  .team__block-title 
+    margin-bottom: 5px
+    font-size: 32px
+
+  .team__block-text 
+    font-size: 13px
+    line-height: 17px
+
+@media screen and ( max-width: 390px )
+  .tape__img 
+    width: 320px
+
+  .tape__text 
+    width: 250px
+    font-size: 10px
+    line-height: 11px
+
+@media screen and ( max-width: 361px )
+  .team__title 
+    font-size: 23px
+    line-height: 22px
+
+@media screen and ( max-width: 335px )
+  .team
+    margin-top: 100px
+
+  .team__tape
+    display: none

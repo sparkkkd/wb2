@@ -1,0 +1,102 @@
+.features
+  margin-top: 150px
+
+.features__wrapper
+  display: flex
+  justify-content: space-between
+  
+.features__block
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+  flex-basis: 30%
+  &:nth-child(2)
+    margin-top: 50px
+  &:nth-child(3)
+    margin-top: 80px
+
+.features__number
+  position: absolute
+  top: 20px
+  left: -50px
+  font-family: 'Kharkiv'
+  font-size: 240px
+  background: linear-gradient(92.53deg, #c726c7 -0.57%, #d30012 56.19%, #bd1c5c 102.63%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  opacity: .2
+  z-index: -1
+
+.features__title
+  margin-bottom: 10px
+  font-size: 48px
+
+.features__text
+  font-size: 18px
+  line-height: 27px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1110px )
+  .features__number
+    font-size: 180px
+    top: 35px
+    left: -25px
+
+  .features__title
+    font-size: 37px
+
+  .features__text 
+    font-size: 15px
+    line-height: 24px
+
+@media screen and ( max-width: 900px )
+  .features
+    margin-top: 80px
+
+@media screen and ( max-width: 860px )
+  .features__number
+    font-size: 160px
+    top: 35px
+    left: -25px
+
+  .features__title
+    font-size: 30px
+
+  .features__text 
+    font-size: 13px
+    line-height: 19px
+
+@media screen and ( max-width: 800px )
+
+  .features__wrapper
+    flex-wrap: wrap
+
+  .features__block
+    flex-basis: 40%
+    &:nth-child(3)
+      margin: 0 auto
+      margin-top: 30px
+      flex-basis: 40%
+
+  .features__number
+    left: auto
+    right: 0px
+
+@media screen and ( max-width: 600px )
+  .features__block
+    flex-basis: 100%
+    margin-bottom: 40px
+    &:nth-child(3)
+      flex-basis: 100%
+
+  .features__number
+    top: -35px
+    right: 0px
+    font-size: 130px
+
+@media screen and ( max-width: 460px )
+   .features__number
+     top: -15px
+     font-size: 100px

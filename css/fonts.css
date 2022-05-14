@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Kharkiv';
+  src: url('../fonts/KharkivTone-Regular.woff2') format('woff2'),
+    url('../fonts/KharkivTone-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue';
+  src: url('../fonts/Neue-Regular.woff2') format('woff2'),
+    url('../fonts/Neue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

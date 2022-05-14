@@ -1,0 +1,52 @@
+.marquee-2
+  max-width: 100%
+  display: flex
+  align-items: center
+  padding: 20px 0px
+  padding-top: 28px
+  margin: 140px 0px
+  border-top: 1px solid #fff
+  border-bottom: 2px solid #fff
+  overflow: hidden
+  div
+    width: 200%
+    display: flex
+    align-items: center
+  
+.marquee-2__text
+  min-width: 100%
+  white-space: nowrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 42px 
+  animation: marquee-2-anim 10s linear infinite
+  font-family: 'Kharkiv'
+  div
+    &:nth-child(even)
+      color: transparent
+      -webkit-text-stroke-width: 1px
+      -webkit-text-stroke-color: white
+
+@keyframes marquee-2-anim
+  0%
+    transform: translateX(0%)
+  100%
+    transform: translateX(-50%)
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1000px )
+  .marquee-2__text
+    font-size: 30px
+  
+@media screen and ( max-width: 640px )
+  .services-marquee
+    margin-top: 70px
+
+@media screen and ( max-width: 700px )
+  .marquee-2__text
+    font-size: 24px
+    
+@media screen and ( max-width: 400px )
+  .marquee-2__text
+    font-size: 18px

@@ -1,0 +1,49 @@
+.clients__wrapper
+  justify-content: center
+  align-items: center
+
+.clients__blocks
+  display: flex
+  justify-content: space-between
+  align-items: start
+  flex-wrap: wrap
+
+.clients__block
+  margin-bottom: 50px
+  min-height: 160px
+  display: flex
+  flex-basis: 23%
+  justify-content: center
+  align-items: center
+  img
+    width: 200px
+  &:nth-child(1)
+    img
+      width: 130px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 960px )
+  .clients__block
+    min-height: 80px
+    img
+      width: 100px
+    &:nth-child(1)
+      img
+        width: 70px
+
+
+@media screen and ( max-width: 600px )
+  .clients__blocks
+    justify-content: center
+
+  .clients__block
+    margin-bottom: 20px
+    flex-basis: 30%
+
+@media screen and ( max-width: 461px )
+  .clients__blocks
+    justify-content: center
+
+  .clients__block
+    margin-bottom: 20px
+    flex-basis: 50%

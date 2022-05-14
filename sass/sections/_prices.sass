@@ -1,0 +1,271 @@
+.prices
+  margin-top: 50px
+  margin-bottom: 100px
+  padding-top: 20px
+  padding-bottom: 20px
+
+.prices__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.price__left
+  padding: 60px 40px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+  flex-basis: 45%
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    background: linear-gradient(93.78deg, #FF32FF -0.84%, #FF0217 60.72%, #F41C74 111.09%)
+    filter: blur(15px)
+    -webkit-backdrop-filter: blur(15px)
+    backdrop-filter: blur(15px)
+    border-radius: 30px
+    z-index: -1
+    
+.price__title
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 60px
+  font-size: 36px
+  line-height: 34px
+  text-align: center
+
+.price__text
+  margin-bottom: 80px
+  font-family: 'Neue'
+  font-size: 18px
+  line-height: 27px
+  p
+    display: inline
+    font-weight: 600
+
+.price__subtext
+  margin-bottom: 80px
+  font-size: 18px
+  line-height: 27px
+  p
+    font-weight: 700
+
+.price__button
+  position: relative
+  text-align: center
+  margin: 0px auto
+  padding: 15px 90px
+  font-size: 21px
+  font-weight: 600
+  border-radius: 20px
+  color: #f41c74
+  background-color: #fff
+  transition: transform .3s
+  &:hover
+    transform: scale(1.05)
+    
+.price__right
+  padding: 25px 40px
+  position: relative
+  flex-basis: 45%
+  border-radius: 30px
+  background-color: #fff
+
+.price__title__right
+  margin-bottom: 20px
+  color: #000
+
+.price__text__right
+  color: #000
+  font-size: 16px
+  margin-bottom: 30px
+
+.price__new
+  margin-bottom: 25px
+  text-align: center
+  color: #000
+  font-size: 34px
+  font-weight: 600
+
+.price__old
+  display: inline-block
+  position: absolute
+  font-size: 21px
+  color:#acacac
+  left: 50%
+  transform: translate(-50%, -50%)
+  &::before
+    content: ''
+    width: 100%
+    height: 2px
+    background-color: #acacac
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.price__button__right
+  margin-top: 60px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: transform .3s
+  &:hover
+    transform: scale(1.05)
+  a
+    position: relative
+    color: #000
+    font-size: 21px
+    font-weight: 500
+    z-index: 2
+    padding: 15px 50px
+    color: #fff
+    border-radius: 15px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+      border-radius: 20px
+      filter: blur(5px)
+      -webkit-backdrop-filter: blur(5px)
+      backdrop-filter: blur(5px)
+      border: none
+      z-index: -1
+      transition: all .3s
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border-radius: 20px
+      filter: blur(10px)
+      -webkit-backdrop-filter: blur(10px)
+      backdrop-filter: blur(10px)
+      border: 2px solid red
+      border-image: linear-gradient(92.53deg, #c726c7 -0.57%, #d30012 56.19%, #bd1c5c 102.63%)
+      border-image-slice: 1
+      z-index: -1
+      opacity: 1
+      transition: all .3s
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1141px )
+  .price__new
+    font-size: 27px
+
+  .price__button
+    font-size: 16px
+
+  .price__button__right
+    a
+      font-size: 16px
+
+@media screen and ( max-width: 1000px )
+  .price__title 
+    margin-bottom: 30px
+    font-size: 27px
+
+  .price__text
+    margin-bottom: 40px
+    font-size: 15px
+
+  .price__subtext
+    margin-bottom: 40px
+    font-size: 14px
+    line-height: 21px
+
+  .price__text__right 
+    font-size: 14px
+
+  .price__new
+    font-size: 22px
+
+  .price__old
+    font-size: 18px
+
+  .price__button
+    font-size: 16px
+
+  .price__button__right
+    a
+      font-size: 16px
+
+@media screen and ( max-width: 878px )
+  .prices__wrapper
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  .price__title
+    margin-right: auto
+    margin-left: auto
+    text-align: center
+
+  .price__left
+    margin-bottom: 50px
+    width: 70%
+    flex-basis: 45%
+
+  .price__right
+    width: 70%
+    flex-basis: 50%
+
+@media screen and ( max-width: 750px )
+  .prices
+    padding: 30px 0
+
+@media screen and ( max-width: 600px )
+  .price__left
+    width: 100%
+  .price__right
+    width: 100%
+
+@media screen and ( max-width: 475px )
+  .price__new 
+    font-size: 18px
+
+  .price__old 
+    font-size: 15px
+
+  .price__button
+    font-size: 12px
+
+  .price__button__right
+    a
+      font-size: 12px
+
+@media screen and ( max-width: 455px )
+  .price__title
+    font-size: 21px
+    line-height: 24px
+
+@media screen and ( max-width: 405px )
+  .price__text__right
+    font-size: 13px
+
+  .price__button__right
+    padding: 15px 30px
+    text-align: center
+
+  .price__left
+    padding: 10px 20px
+    padding-bottom: 60px
+    border-radius: 20px
+
+  .price__right
+    padding: 10px 20px
+    border-radius: 20px
+
+  .price__old
+    text-align: center

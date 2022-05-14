@@ -1,0 +1,235 @@
+.claim
+  margin-top: 140px
+
+.claim__img--mob
+  display: none
+
+.claim__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.claim__main
+  width: 100%
+  margin-top: 50px
+  display: flex
+  justify-content: space-between
+  align-items: start
+
+.input__title
+  margin-bottom: 10px
+  font-family: 'Neue'
+  font-size: 18px
+  color: #c9c9c9
+
+.form__input
+  width: 100%
+  margin-bottom: 50px
+  padding: 10px
+  font-family: 'Neue'
+  font-size: 18px
+  color: #fff
+  background: transparent
+  border: 1px solid #fff
+  border-radius: 20px
+
+.claim__feedback
+  margin-bottom: 20px
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-family: 'Neue'
+
+.select-label
+  display: block
+  margin-bottom: 50px
+  color: #FF32FF
+
+#form__select
+  display: none
+
+.claim__select
+  margin-left: 20px
+  position: relative
+
+.select__icon
+  cursor: pointer
+  transition: transform .3s
+  &:hover
+    transform: scale(.9)
+  
+.select__body
+  position: absolute
+  top: 140%
+  left: 0
+  right: 0
+  width: 110px
+  display: flex
+  justify-content: start
+  align-items: start
+  flex-direction: column
+  padding: 10px
+  border: 2px solid #f41c74
+  background-color: #252426
+  transform: scaleY(0)
+  transform-origin: top
+  opacity: 0
+  transition: transform .3s, opacity .3s
+
+.select__body--active
+  transform: scaleY(1)
+  opacity: 1
+
+.select__item
+  cursor: pointer
+  margin-bottom: 10px
+  font-size: 16px
+  color: #fff
+  transition: color .3s
+  &:last-child
+    margin-bottom: 0%
+  &:hover
+    color: #f41c74
+
+.claim__privacy
+  margin-bottom: 70px
+  display: flex
+  align-items: center
+
+.check__text
+  font-family: 'Neue'
+
+.claim__checkbox--hidden
+  display: block
+  margin-right: 10px
+  padding: 10px
+
+.claim__checkbox
+  display: none
+  margin-right: 10px
+  position: relative
+  width: 20px
+  height: 20px
+  background-color: transparent
+  border: 1px solid #fff
+  border-radius: 5px
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 5px
+    background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+    opacity: 0
+    transition: opacity .3s
+
+.claim__checkbox--hidden:checked + label::before
+  opacity: 1
+
+.claim__button
+  padding: 15px 50px
+  font-size: 24px
+  &:hover
+    &::before
+      transform: scale(1.05)
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1400px )
+  .select__body
+    left: -530%
+
+@media screen and ( max-width: 1045px )
+  .claim__img
+    img
+      width: 300px
+  
+@media screen and ( max-width: 1010px )
+  .claim__main
+    justify-content: space-between
+
+  .claim__form
+    width: 80%
+
+@media screen and ( max-width: 985px )
+  .select__body
+    right: auto
+    left: -50%
+    transform: translateX(-50%) scaleY(0)
+
+  .select__body--active
+    transform: translateX(-50%) scaleY(1)
+
+@media screen and ( max-width: 900px )
+  .claim__img
+    img
+      width: 250px
+    
+@media screen and ( max-width: 788px )
+  .select__body
+    left: -250%
+
+@media screen and ( max-width: 777px )
+  .claim
+    position: relative
+    overflow: hidden
+    padding-bottom: 30px
+
+  .claim__img
+    display: none
+
+  .claim__main
+    z-index: 2
+
+  .claim__img--mob
+    display: block
+    position: absolute
+    overflow: hidden
+    right: -136px
+    bottom: -10px
+    z-index: -1
+    img
+      width: 350px
+
+@media screen and ( max-width: 750px )
+  .claim__form
+    width: 70%
+
+  .claim__button 
+    padding: 10px 45px
+    font-size: 19px
+
+  .form__input 
+    font-size: 14px
+    border-radius: 15px
+
+  .claim__feedback
+    font-size: 14px
+
+  .check__text
+    font-size: 14px
+
+@media screen and ( max-width: 555px )
+  .claim__img--mob
+    right: -175px
+
+@media screen and ( max-width: 475px )
+  .claim__main
+    margin-top: 0px
+
+@media screen and ( max-width: 425px )
+  .claim__img--mob
+    right: -120px
+    bottom: 55px
+    img
+      width: 270px
+
+@media screen and ( max-width: 370px )
+  .claim__form
+    width: 90%
+
+  .claim__button 
+    padding: 5px 30px
+    font-size: 15px

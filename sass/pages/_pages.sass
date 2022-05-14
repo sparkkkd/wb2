@@ -1,0 +1,452 @@
+.page-main
+  padding-top: 100px
+
+/* ****************** Intro ****************** */  
+.page__intro
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.page__title
+  margin-bottom: 50px
+  font-family: 'Kharkiv'
+  font-size: 64px
+  line-height: 70px
+
+.page__subtitle
+  margin-top: -30px
+  margin-bottom: 80px
+  width: 80%
+  font-size: 21px
+  line-height: 34px
+  color: #c9c9c9
+
+.page__button
+  position: relative
+  padding: 20px 80px
+  font-size: 24px
+  border-radius: 30px
+  transition: transform .3s
+  font-family: 'Neue'
+  color: #fff
+  border: none
+  border-radius: 30px
+  z-index: 1
+  transform: scale(1)
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(92.53deg, #FF32FF -0.57%, #FF0217 56.19%, #F41C74 102.63%)
+    border-radius: 30px
+    filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px)
+    border: none
+    z-index: -1
+    transition: all .3s
+  &:hover
+    &::before
+      transform: scale(1.05)
+
+.page__right
+  img
+    width: 400px
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1180px )
+  .page__title 
+    font-size: 54px
+    line-height: 57px
+
+  .page__button
+    font-size: 20px
+
+  .page__right 
+    img 
+      width: 350px
+
+@media screen and ( max-width: 1000px )
+  .page__title 
+    font-size: 50px
+    line-height: 52px
+
+  .page__subtitle
+    font-size: 20px
+    line-height: 27px
+
+  .page__button
+    padding: 15px 60px
+    font-size: 20px
+
+  .page__right 
+    img 
+      width: 300px
+
+@media screen and ( max-width: 900px )
+  .page__title 
+    font-size: 38px
+    line-height: 37px
+
+  .page__subtitle
+    margin-bottom: 50px
+    width: 60%
+    font-size: 16px
+    line-height: 20px
+
+  .page__button
+    padding: 12px 50px
+    font-size: 18px
+
+  .page__right 
+    img 
+      width: 250px
+
+@media screen and ( max-width: 680px )
+  .page-main
+    padding-top: 150px
+
+  .page__left
+    width: 100%
+
+  .page__title 
+    font-size: 46px
+    line-height: 48px
+
+  .page__subtitle
+    width: 80%
+
+  .page__button
+    padding: 20px 0px
+    display: block
+    text-align: center
+    width: 100%
+
+  .page__right 
+    display: none
+
+@media screen and ( max-width: 525px )
+  .page__title 
+    margin-bottom: 50px
+    font-size: 32px
+    line-height: 37px
+
+  .page__button
+    font-size: 16px
+
+  .page__claim
+    margin-top: 80px
+
+@media screen and ( max-width: 355px )
+  .page__title 
+    font-size: 27px
+    line-height: 30px
+
+  .page__button
+    padding: 15px 0px
+    border-radius: 20px
+    &::before
+      border-radius: 20px
+
+/* ****************** Page info ****************** */
+.page-info
+  margin-top: 150px
+
+.page-info__wrapper
+  display: flex
+  flex-direction: column
+
+.info__box
+  margin-bottom: 60px
+  display: flex
+  align-items: center
+  margin-right: auto
+  &:nth-child(even)
+    margin-right: 0px
+    margin-left: auto
+    width: 70%
+
+.info__box-cards
+  &:nth-child(even)
+    width: 60%
+
+.info__box-advancement
+   &:nth-child(even)
+     width: 60%  
+
+.info__img
+  margin-right: 50px
+  img
+    width: 150px
+
+.info__text
+  display: flex
+  align-items: start
+  flex-direction: column
+
+.info__title
+  margin-bottom: 30px
+  font-family: 'Kharkiv'
+  font-size: 48px
+
+.info__subtitle
+  span
+    margin-bottom: 5px
+    display: block
+    font-size: 18px
+    line-height: 27px
+    color: #c9c9c9
+
+.info__span--margin
+  margin-top: 15px 
+
+.page-info__wrapper-design
+  flex-direction: row
+  align-items: start
+
+.info__box-deisgn
+  width: auto
+  align-items: start
+  flex-basis: 45%
+  .info__img
+    img
+      max-height: 160px
+      width: auto
+
+.info__box-advice
+  .info__text
+    .info__subtitle
+      display: flex
+      align-items: start
+      span
+        margin-right: 40px
+        flex-basis: 40%
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1200px )
+  .info__box-deisgn
+    .info__img
+      img
+        max-height: 130px
+    .info__text
+      .info__title
+        font-size: 34px
+      .info__subtitle
+        span
+          font-size: 15px
+          line-height: 23px
+
+  .info__box-advice
+    .info__text
+      .info__title
+        font-size: 38px
+
+@media screen and ( max-width: 1000px )
+  .claim
+    margin-top: 80px
+
+  .info__box
+    &:nth-child(even)
+      margin-right: 0px
+      margin-left: auto
+      width: 80%
+
+  .info__title
+    margin-bottom: 20px
+    font-size: 40px
+
+@media screen and ( max-width: 980px )
+  .page-info__wrapper-design
+    flex-direction: column
+
+  .info__box-deisgn
+    &:nth-child(even)
+      margin-right: 0px
+      margin-left: 0px
+    .info__img
+      img
+        max-width: 105px
+        max-height: auto
+
+@media screen and ( max-width: 942px )
+  .info__box-advice
+    .info__text
+      .info__title
+        font-size: 28px
+      .info__subtitle
+        flex-direction: column
+        span
+          margin-right: 0px
+          margin-bottom: 20px
+          flex-basis: 100%
+
+@media screen and ( max-width: 830px )
+  .page__claim
+    margin-top: 60px
+
+  .info__img
+    img
+      width: 120px
+
+  .info__title
+    margin-bottom: 20px
+    font-size: 34px
+
+  .info__subtitle
+    span
+      font-size: 16px
+      line-height: 20px
+
+@media screen and ( max-width: 760px )
+  .info__box
+    &:nth-child(even)
+      margin-right: 0px
+      margin-left: 0px
+      width: 100%
+
+@media screen and ( max-width: 730px )
+  .info__box-advice
+    .info__text
+      .info__title
+        font-size: 24px   
+
+@media screen and ( max-width: 730px )
+  .info__box-advice
+    .info__text
+      .info__title
+        font-size: 21px  
+
+@media screen and ( max-width: 570px )
+  .info__img
+    img
+      width: 80px
+
+  .info__title
+    font-size: 27px
+
+  .info__subtitle 
+    span 
+      font-size: 14px
+      line-height: 16px
+
+  .info__box-deisgn
+    .info__img
+      img
+        max-width: 70px
+        max-height: auto
+
+  .info__box-deisgn
+    .info__text
+      .info__title
+        font-size: 27px
+
+@media screen and ( max-width: 405px )
+  .info__img
+    margin-right: 20px
+
+  .info__title
+    font-size: 22px
+
+@media screen and ( max-width: 350px )
+  .info__box-deisgn
+    .info__text
+      .info__title
+        font-size: 21px
+
+/* ****************** Politics ****************** */
+.politics__main
+  padding-top: 150px
+
+.politics__title
+  margin-bottom: 15px
+  font-family: 'Kharkiv'
+  font-size: 72px
+  line-height: 86px
+
+.politics__wrapper
+  display: flex
+  justify-content: start
+  align-items: start
+  flex-direction: column
+  span
+    margin: 20px 0px
+    display: block
+    font-family: 'Neue'
+    font-size: 24px
+    line-height: 34px
+  
+.politics__subtitle
+  margin-top: 20px
+  font-family: 'Kharkiv'
+  font-size: 36px
+  line-height: 42px
+
+.politics__button
+  margin-top: 50px
+  padding: 20px 100px
+  font-size: 24px
+
+.footer__tape-politics
+  display: none
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1000px )
+  .politics__title
+    font-size: 50px
+    line-height: 55px
+
+  .politics__subtitle
+    font-size: 26px
+    line-height: 38px
+
+  .politics__wrapper span
+    font-size: 20px
+    line-height: 28px
+
+@media screen and ( max-width: 680px )
+  .politics__title
+    font-size: 37px
+    line-height: 41px
+
+  .politics__subtitle
+    font-size: 21px
+    line-height: 28px
+
+  .politics__wrapper span
+    font-size: 17px
+    line-height: 22px
+
+  .politics__button
+    margin-top: 50px
+    padding: 20px 100px
+    font-size: 18px
+
+@media screen and ( max-width: 500px )
+  .politics__main
+    padding-top: 100px
+
+  .politics__title
+    font-size: 24px
+    line-height: 28px
+
+  .politics__subtitle
+    font-size: 14px
+    line-height: 24px
+
+  .politics__wrapper span
+    font-size: 13px
+    line-height: 17px
+
+  .politics__button
+    margin-top: 50px
+    padding: 20px 70px
+    width: 100%
+    font-size: 16px
+
+@media screen and ( max-width: 337px )
+  .politics__title
+    font-size: 22px
+    line-height: 26px
